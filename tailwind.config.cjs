@@ -12,18 +12,7 @@ module.exports = {
       },
       backgroundImage: {
         hero: "url('https://images.unsplash.com/photo-1618556450991-2f1af64e8191')",
-
-        techHTML: "url('src/assets/imgs/techs/html5.svg')",
-        techCSS: "url('src/assets/imgs/techs/css3.svg')",
-        techJS: "url('src/assets/imgs/techs/javascript.svg')",
-        techVSC: "url('src/assets/imgs/techs/visualstudiocode.svg')",
-        techReact: "url('src/assets/imgs/techs/react.svg')",
-        techWebpack: "url('src/assets/imgs/techs/webpack.svg')",
-        techVue: "url('src/assets/imgs/techs/vuedotjs.svg')",
-        techVite: "url('src/assets/imgs/techs/vite.svg')",
-        techFirebase: "url('src/assets/imgs/techs/firebase.svg')",
-        techTailwind: "url('src/assets/imgs/techs/tailwindcss.svg')",
-        techBulma: "url('src/assets/imgs/techs/bulma.svg')",
+        pfp: "url('src/assets/imgs/profilepic.png')",
       },
       fontFamily: {
         bold: ["Poppins", "sans-serif"],
