@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+#headerRender {
+    position: absolute;
+}
+
 .hamburger {
     cursor: pointer;
     width: 24px;
@@ -44,4 +48,21 @@
 
 .open .hamburger-bottom {
     transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+div .slide-info {
+    opacity: 0;
+    transition: opacity ease 0.5s;
+}
+
+div .slide-info:hover {
+    opacity: .9;
+}
+
+.swiper-button-prev {
+    color: hsl(90, 64%, 57%);
+}
+
+.swiper-button-next {
+    color: hsl(90, 64%, 57%);
 }
