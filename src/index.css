@@ -61,8 +61,10 @@ div .slide-info:hover {
 
 .swiper-button-prev {
     color: hsl(90, 64%, 57%);
+    margin-left: 3rem;
 }
 
 .swiper-button-next {
     color: hsl(90, 64%, 57%);
+    margin-right: 3rem;
 }

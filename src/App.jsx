@@ -7,6 +7,9 @@ import "swiper/css/navigation";
 import { useState, useRef } from "react";
 import { useInView } from "framer-motion";
 import { ComputerScene } from "./3DScene";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -205,7 +208,7 @@ function App() {
             Projects
           </p>
         </div>
-        <div className="h-full p-10">
+        <div className="h-full mt-5">
           <Swiper
             spaceBetween={15}
             slidesPerView={1}
@@ -224,7 +227,20 @@ function App() {
                     contact for prospective clients and employers!
                   </p>
                   <p className="mt-5 text-2xl">
-                    <a href="https://www.artsyalexw.com/">🔗</a>
+                    <a
+                      className="mx-3"
+                      href="https://github.com/meshDrip/allie-w-portfolio"
+                      target="_blank"
+                    >
+                      <FontAwesomeIcon icon={faCode} />
+                    </a>
+                    <a
+                      className="mx-3"
+                      href="https://www.artsyalexw.com/"
+                      target="_blank"
+                    >
+                      <FontAwesomeIcon icon={faLink} />
+                    </a>
                   </p>
                 </div>
                 <div className="flex flex-row "></div>
@@ -240,12 +256,22 @@ function App() {
                     relevant information and display them uniformly. Written in
                     Vue.
                   </p>
-                  <a
-                    className="mt-5 text-2xl"
-                    href="https://lightnews-three.vercel.app/"
-                  >
-                    🔗
-                  </a>
+                  <p className="mt-5 text-2xl">
+                    <a
+                      className="mx-3"
+                      href="https://github.com/meshDrip/light-news"
+                      target="_blank"
+                    >
+                      <FontAwesomeIcon icon={faCode} />
+                    </a>
+                    <a
+                      className="mx-3"
+                      href="https://lightnews-three.vercel.app/"
+                      target="_blank"
+                    >
+                      <FontAwesomeIcon icon={faLink} />
+                    </a>
+                  </p>
                 </div>
               </div>
             </SwiperSlide>
@@ -261,8 +287,19 @@ function App() {
                     deploy.
                   </p>
                   <p className="mt-5 text-2xl">
-                    <a href="https://resorts-at-oceanview.web.app/index.html">
-                      🔗
+                    <a
+                      className="mx-3"
+                      href="https://github.com/meshDrip/florida-resort"
+                      target="_blank"
+                    >
+                      <FontAwesomeIcon icon={faCode} />
+                    </a>
+                    <a
+                      className="mx-3"
+                      href="https://resorts-at-oceanview.web.app/"
+                      target="_blank"
+                    >
+                      <FontAwesomeIcon icon={faLink} />
                     </a>
                   </p>
                 </div>

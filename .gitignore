@@ -12,7 +12,11 @@ dist
 dist-ssr
 *.local
 src/assets
-public
+
+#Public
+public/imgs
+public/fonts
+pc.glb
 
 # Editor directories and files
 .vscode/*
@@ -24,3 +28,6 @@ public
 *.njsproj
 *.sln
 *.sw?
+
+.firebaserc
+.firebase/

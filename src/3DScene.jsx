@@ -1,15 +1,22 @@
 import { Canvas, useThree } from "@react-three/fiber";
 import { OrbitControls, Plane, useGLTF, Text3D } from "@react-three/drei";
 import { Suspense } from "react";
+import { motion } from "framer-motion-3d";
 
 function ComputerModel(props) {
   const { nodes, materials } = useGLTF("/pc.glb");
   const { viewport } = useThree();
   return (
-    <group
+    <motion.group
       {...props}
       dispose={null}
-      scale={Math.min(Math.max(viewport.width / 5, 0.1), 1)}
+      initial={[{ scale: 0 }, { rotateY: 5 }]}
+      animate={[
+        { scale: Math.min(Math.max(viewport.width / 5, 0.1), 1) },
+        { rotateY: 0 },
+      ]}
+      transition={{ ease: "easeInOut", duration: 2 }}
+      // scale={}
     >
       <group position={[0, -1, 0]} rotation={[0, Math.PI / 2, 0]}>
         <mesh
@@ -93,14 +100,14 @@ function ComputerModel(props) {
         SOFT
         <meshPhongMaterial color={"hsl(90, 64%, 57%)"} shininess={1000} />
       </Text3D>
-    </group>
+    </motion.group>
   );
 }
 useGLTF.preload("/pc.glb");
 
 export function ComputerScene() {
   return (
-    <div className="bg-darkMidnight mx-auto w-full absolute h-full">
+    <motion.div className="bg-darkMidnight mx-auto w-full absolute h-full">
       <Suspense>
         <Canvas
           className="z-0"
@@ -130,6 +137,6 @@ export function ComputerScene() {
           />
         </Canvas>
       </Suspense>
-    </div>
+    </motion.div>
   );
 }
