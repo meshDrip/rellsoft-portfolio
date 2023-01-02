@@ -14,9 +14,7 @@ dist-ssr
 src/assets
 
 #Public
-public/imgs
-public/fonts
-pc.glb
+public/
 
 # Editor directories and files
 .vscode/*
